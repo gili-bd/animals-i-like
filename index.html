@@ -10,10 +10,13 @@
 <head>
     <style>
         .picture{
-              border: 5px solid rgb(199, 103, 172);
-                border-radius: 20px;
+           
                 width: 200px;
                 margin: 30px;
+                border-radius: 48px;
+background: #b0279d;
+box-shadow:  25px 25px 51px #56134d,
+             -25px -25px 51px #ff3bed;
 
         }
 
@@ -24,6 +27,15 @@
   font-weight: 300;
   font-style: normal;
 } 
+.glass{
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.34);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2.1px);
+-webkit-backdrop-filter: blur(2.1px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,7 +58,7 @@ h1
         </p>
   
     
-        <div style="display:flex">
+        <div class="glass" style="display:flex">
 
         <a href="https://www.mako.co.il/food-recipes/recipes_column-bread/Recipe-df29cf2e4721731006.htm" target="_blank"> 
             <img class="picture" src="https://www.pizzalab.co.il/wp-content/uploads/2023/05/neapolitan-margherita-pizza.webp">
